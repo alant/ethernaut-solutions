@@ -14,9 +14,9 @@ function transferFrom(
 ```
 
 solution:
-```
-# first approve the player for all
+```javascript
+// first approve the player for all
 contract.approve(player, 1000000 * (10 ** 18))
-# then spend the approved amount
+// then spend the approved amount
 contract.transferFrom(player, '0x0', 1000000 * (10 ** 18))
 ```
